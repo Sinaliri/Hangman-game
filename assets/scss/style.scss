@@ -1,0 +1,60 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    p{
+        @include d-flex(flex,center,flex-start);
+        font: {
+            size: 3rem;
+            weight:bold;
+        }
+        @include margin-padding(10px,0,20px,0)
+    }
+    #letters{
+        @include d-flex(flex,space-around,flex-start);
+        flex-wrap: wrap;
+        
+            div{
+                @include d-flex();
+                height: 60px;
+                width: 60px;
+                border: 1px #000 solid;
+                font: {
+                    size: $letter-font-size;
+                    weight:bold;
+                }
+                margin: 10px;
+                color: $letter-color;
+                &:hover{
+                    background-color: $letter-hover;
+                }
+                &:focus{
+                    background-color: #4e834e;
+                    opacity: $letter-opacity;
+                }
+        
+            }
+        }
+        
+        #image{
+            @include margin-padding(100px,);
+            @include d-flex();
+        }
+        #your-guess{
+            @include margin-padding(10px);
+            @include d-flex();
+            p{
+                margin: 0;
+                font-size: 3rem;
+                letter-spacing: 0.5rem;
+            }
+        }
+        #result{
+            @include d-flex;
+            @include margin-padding(20px)
+        }
+}
