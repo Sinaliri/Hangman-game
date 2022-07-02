@@ -32,10 +32,7 @@ body{
                 &:hover{
                     background-color: $letter-hover;
                 }
-                &:focus{
-                    background-color: #4e834e;
-                    opacity: $letter-opacity;
-                }
+
         
             }
         }
@@ -53,8 +50,14 @@ body{
                 letter-spacing: 0.5rem;
             }
         }
-        #result{
+        #winOrLoss{
             @include d-flex;
-            @include margin-padding(20px)
+            @include margin-padding(20px);
+            display: none;
         }
+
+}
+.used{
+    background-color: #4e834e;
+    opacity: $letter-opacity;
 }

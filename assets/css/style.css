@@ -33,10 +33,6 @@ body #letters div {
 body #letters div:hover {
   background-color: rgba(43, 205, 43, 0.7254901961);
 }
-body #letters div:focus {
-  background-color: #4e834e;
-  opacity: 0.5;
-}
 body #image {
   margin: 100px 0 0 0;
   display: flex;
@@ -54,9 +50,15 @@ body #your-guess p {
   font-size: 3rem;
   letter-spacing: 0.5rem;
 }
-body #result {
+body #winOrLoss {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0 0 0;
+  display: none;
+}
+
+.used {
+  background-color: #4e834e;
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */
